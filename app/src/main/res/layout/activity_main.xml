@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="br.com.thiengo.palindromo.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="É um palíndromo? (versão beta, somente palavras)"
+        android:textColor="#ddd"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/et_palindromo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_titulo"
+        android:layout_marginBottom="8dp"
+        android:hint="Informe aqui a palavra"
+        android:textColor="#ddd"
+        android:textColorHint="#888" />
+
+    <TextView
+        android:id="@+id/tv_resposta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_palindromo"
+        android:layout_marginTop="8dp"
+        android:textColor="#ddd"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/bt_verificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#306271"
+        android:text="Verificar"
+        android:textColor="#ddd" />
+
+</RelativeLayout>
