@@ -1,12 +1,11 @@
 package br.com.thiengo.palindromo;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -23,7 +22,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         EditText etPalindromo = (EditText) findViewById(R.id.et_palindromo);
         TextView tvResposta = (TextView)  findViewById(R.id.tv_resposta);
-        Palindromo palindromo = new Palindromo( etPalindromo.getText().toString() );
+        //Palindromo palindromo = new Palindromo( etPalindromo.getText().toString() );
+        PalindromoK palindromo = new PalindromoK( etPalindromo.getText().toString() );
         String resposta;
 
         if( palindromo.ehPalindromo() ){
