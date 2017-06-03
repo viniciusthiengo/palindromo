@@ -7,7 +7,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import br.com.thiengo.palindromo.domain.Palindromo;
+import br.com.thiengo.palindromo.domain.PalindromoK;
+
+public class MainActivity extends AppCompatActivity
+        implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

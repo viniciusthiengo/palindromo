@@ -1,4 +1,4 @@
-package br.com.thiengo.palindromo;
+package br.com.thiengo.palindromo.domain;
 
 
 public class Palindromo {
