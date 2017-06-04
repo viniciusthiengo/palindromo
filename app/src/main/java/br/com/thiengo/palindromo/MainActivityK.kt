@@ -7,12 +7,14 @@ import br.com.thiengo.palindromo.domain.Palindromo
 import br.com.thiengo.palindromo.domain.PalindromoK
 import kotlinx.android.synthetic.main.activity_main.*
 
+
 fun String.ehPalindromo(): String{
     return if(this.reversed() == this)
-        "$this é um palíndromo"
+        "${this.toLowerCase()} é um palíndromo"
     else
-        "$this NÃO é um palíndromo"
+        "${this.toLowerCase()} NÃO é um palíndromo"
 }
+
 
 class MainActivityK :
         AppCompatActivity(),

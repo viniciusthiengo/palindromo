@@ -1,6 +1,5 @@
 package br.com.thiengo.palindromo.domain;
 
-
 public class Palindromo {
     private String conteudo;
 
