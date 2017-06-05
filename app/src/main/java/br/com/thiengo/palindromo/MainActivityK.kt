@@ -7,14 +7,12 @@ import br.com.thiengo.palindromo.domain.Palindromo
 import br.com.thiengo.palindromo.domain.PalindromoK
 import kotlinx.android.synthetic.main.activity_main.*
 
-
 fun String.ehPalindromo(): String{
-    return if(this.reversed() == this)
-        "${this.toLowerCase()} é um palíndromo"
-    else
-        "${this.toLowerCase()} NÃO é um palíndromo"
+    return if(this == this.reversed())
+            "${this.toLowerCase()} é um palíndromo"
+        else
+            "${this.toLowerCase()} NÃO é um palíndromo"
 }
-
 
 class MainActivityK :
         AppCompatActivity(),
@@ -24,21 +22,17 @@ class MainActivityK :
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        bt_verificar.setOnClickListener( this )
+        bt_verificar.setOnClickListener(this)
     }
 
     override fun onClick(view: View?) {
-        /*//val palindromo = PalindromoK( et_palindromo.text.toString() )
-        val palindromo = Palindromo( et_palindromo.text.toString() )
-        var resposta: String
+        /*//val palindromo = PalindromoK( et_palindromo.text.toString() );
+        val palindromo = Palindromo( et_palindromo.text.toString() );
 
-        resposta = if( palindromo.ehPalindromo() )
-                " é um palíndromo"
+        tv_resposta.text = if( palindromo.ehPalindromo() )
+                "${palindromo.conteudo} é um palíndromo"
             else
-                " NÃO é um palíndromo"
-
-        resposta = palindromo.conteudo + resposta
-        tv_resposta.text = resposta*/
-        tv_resposta.text = et_palindromo.text.toString().ehPalindromo();
+                "${palindromo.conteudo} NÃO é um palíndromo"*/
+        tv_resposta.text = et_palindromo.text.toString().ehPalindromo()
     }
 }
