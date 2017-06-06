@@ -1,7 +1,7 @@
 package br.com.thiengo.palindromo.domain
 
 
-data class PalindromoK( var _conteudo: String ) {
+class PalindromoK( var _conteudo: String ) {
     val conteudo: String = _conteudo
         get(){
             return field.toLowerCase()

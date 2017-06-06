@@ -8,7 +8,7 @@ import br.com.thiengo.palindromo.domain.PalindromoK
 import kotlinx.android.synthetic.main.activity_main.*
 
 fun String.ehPalindromo(): String{
-    return if(this == this.reversed())
+    return if(this.toLowerCase() == this.toLowerCase().reversed())
             "${this.toLowerCase()} é um palíndromo"
         else
             "${this.toLowerCase()} NÃO é um palíndromo"
