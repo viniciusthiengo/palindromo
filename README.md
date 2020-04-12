@@ -6,7 +6,7 @@ Artigo que apresenta a mais nova linguagem oficial Android, a linguagem Kotlin. 
 
 <img src="https://www.thiengo.com.br/img/post/normal/m1c16iknq06cjlvcngd3s27o80c99f7c7110cb9a368c96e119920c8e36.jpg" width="496" alt="Kotlin Android">
 
-O conteúdo do artigo também está disponível em [vídeos](https://www.thiengo.com.br/kotlin-android-entendendo-e-primeiro-projeto#title-22).
+O conteúdo do artigo também está disponível em [vídeo](https://www.thiengo.com.br/kotlin-android-entendendo-e-primeiro-projeto#title-22).
 
 ### Primeira parte
 
